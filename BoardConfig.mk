@@ -40,7 +40,7 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40080000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS  := --ramdisk_offset 0x03f80000 --tags_offset 0x0df80000
+BOARD_MKBOOTIMG_ARGS  := --kernel_offset 0x00000000 --ramdisk_offset 0x03f80000 --tags_offset 0x0df80000
 TARGET_PREBUILT_KERNEL := device/xiaomi/hennessy/zImage-dtb
 
 TARGET_USERIMAGES_USE_EXT4 := true
